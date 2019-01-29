@@ -23,8 +23,13 @@ class fila:
 
 f = fila()
 
-
 print("\n")
+print("******************* BANCO DO POVÃO *******************")
+print("\n")
+print("========================= '' =========================")
+print("\n")
+
+
 inicioTempo1 = time.time()
 f.enqueue(1)
 print("o cliente entrou na fila no tempo: ",inicioTempo1)
@@ -60,20 +65,29 @@ f.dequeue()
 print("O 3º cliente foi atendido ",finalTempo3)
 print("Fila vazia",f.itens)
 
+print("\n")
+print("========================= '' =========================")
+print("\n")
 
 media1 = finalTempo1 - inicioTempo1
+print("1º cliente")
+print("Tempo medio na fila:", media1, "\n")
 
 media2 = finalTempo2 - inicioTempo2
+print("2º cliente")
+print("Tempo medio na fila:", media2, "\n")
 
 media3 = finalTempo3 - inicioTempo3
+print("3º cliente")
+print("Tempo medio na fila:", media3)
 
-mediaGeral = (media1+media2+media3)/3
 
 print("\n")
 print("========================= '' =========================")
 print("\n")
-print("Tempo medio na fila: ", mediaGeral)
-print("\n")
+
+print("OBRIGADO PELA PREFERENCIA!!!!!")
+
 
 
 
