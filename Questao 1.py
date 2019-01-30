@@ -39,7 +39,7 @@ class pilha():
         return self.lista[-1]
 
 lista = [1,2,3]
-
+print("Lista normal -->",lista)
 
 p = pilha()
 for i in lista:
@@ -50,4 +50,8 @@ for i in range(p.length()):
     f.enqueue(valor)
 
 
-print(f.itens)
+for i in range(f.length()):
+    valor = f.dequeue()
+    lista2 = f.enqueue(valor)
+
+    print("Lista invertida -->",f.itens)
