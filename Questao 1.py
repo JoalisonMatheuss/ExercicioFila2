@@ -9,7 +9,7 @@ class fila:
         if (not(self.isEmpty())):
             return self.itens.pop(0)
 
-    def lenght(self):
+    def length(self):
         return len(self.itens)
     
     def isEmpty(self):
@@ -32,29 +32,22 @@ class pilha():
     def isEmpty(self):
         return len(self.lista) == 0
     
-    def lenght(self):
-        return len(lista.self)
+    def length(self):
+        return len(self.lista)
     
     def peek(self):
         return self.lista[-1]
 
+lista = [1,2,3]
 
-    
-f = fila()
-f.enqueue(1)
-f.enqueue(2)
-f.enqueue(3) 
 
-print("Lista normal -->",f.itens)
-aux = 0 
 p = pilha()
-for i in range(f.lenght()):
-    aux = f.dequeue()
-    p.push(aux)
-    
-for i in range(f.lenght()):
-    aux = p.pop()
-    f.enqueue(aux)
+for i in lista:
+    p.push(i)
+f = fila()
+for i in range(p.length()):
+    valor = p.pop()
+    f.enqueue(valor)
 
-print("Fila vazia -->",f.itens)
-print("Fila na pilha -->",p.lista)
+
+print(f.itens)
