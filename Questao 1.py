@@ -39,7 +39,7 @@ class pilha():
         return self.lista[-1]
 
 lista = [1,2,3]
-print("Lista normal -->",lista)
+print("Lista normal -->",lista,"\n")
 
 p = pilha()
 for i in lista:
