@@ -3,23 +3,23 @@ import time
 
 class Fila:
   def __init__(self):
-    self.elementos = []
+    self.itens = []
     self.nome = ["Dri", "Jooj"]
     self.hora = ["10:10", "10:11"]
 
-  def lenght(self):
-    return len(self.elementos)
-
-  def isEmpyt(self):
-    return len(self.elementos)==0
-
   def enqueue(self,valor):
-    self.elementos.append(valor)
+     self.itens.append(valor)
 
   def dequeue(self):
-    if(not(self.isEmpyt())):
-      self.elementos.pop(0)
+     if (not(self.isEmpty())):
+        return self.itens.pop(0)
 
+  def length(self):
+    return len(self.itens)
+    
+  def isEmpty(self):
+    return len(self.itens) == 0
+  
 fila = Fila()
 print("'==================== '' ===================='")
 print("\n")
@@ -32,7 +32,7 @@ print("\n")
 for i in range(1,3):
   fila.enqueue("cliente: %s"%(i))
 
-print(fila.elementos)
+print(fila.itens)
 print("\n")
 print("'============== Fila de Espera =============='")
 print("\n")
@@ -62,4 +62,3 @@ print("\n")
 print("==================== '' ====================")
 print("\n")
 print("Tempo médio que os consumidores levaram para serem atendidos: %d minutos"%(media))
-
