@@ -22,6 +22,8 @@ class fila:
 
 f = fila()
 
+print("'==================== '' ===================='")
+print("\n")
 
 soma = 0 
 for i in range(2):
@@ -34,12 +36,13 @@ for i in range(2):
     tempo2 = time.time()
 
     tempoTotal = tempo2 - tempo
-    print("O tempo na fila foi: %d"%(tempoTotal))
+    print("O tempo na fila foi: %d minutos \n"%(tempoTotal))
 
     soma += tempoTotal
 
 media = soma/2
-print("Tempo medio na fila: %d"%(media))
+
+print("'==================== '' ===================='")
+print("\n")
+print("Tempo medio na fila: %d minutos"%(media))
     
-
-
