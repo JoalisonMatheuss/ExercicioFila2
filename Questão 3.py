@@ -5,7 +5,7 @@ class Fila:
   def __init__(self):
     self.elementos = []
     self.nome = ["Dri", "Jooj"]
-    self.hora = []
+    self.hora = ["10:10", "10:11"]
 
   def lenght(self):
     return len(self.elementos)
@@ -21,19 +21,25 @@ class Fila:
       self.elementos.pop(0)
 
 fila = Fila()
+print("'==================== '' ===================='")
+print("\n")
+print("   CAT - Centro de Atendimento Telefônico")
+print("\n")
+print("'==================== '' ===================='")
+print("\n")
+
 
 for i in range(1,3):
   fila.enqueue("cliente: %s"%(i))
 
-print("Hora de chegada 10:10 AM do %s"%(fila.elementos[0]))
-print("Hora de chegada 10:11 AM do %s"%(fila.elementos[1]))
 print(fila.elementos)
 print("\n")
-print("==================== '' ====================")
+print("'============== Fila de Espera =============='")
 print("\n")
 
 soma = 0 
 for i in range(2):
+  print("%s chegou de %s AM"%(fila.nome[i],fila.hora[i]))
   print("%s em espera para ser atendido"%(fila.nome[i]))
 
   espera = random.randint(1,6)
@@ -55,4 +61,5 @@ media = soma/2
 print("\n")
 print("==================== '' ====================")
 print("\n")
-print("Tempo médio que os consumidores levam para serem atendidos: %d minutos"%(media))
+print("Tempo médio que os consumidores levaram para serem atendidos: %d minutos"%(media))
+
